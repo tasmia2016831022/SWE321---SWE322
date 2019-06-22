@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package IteratorPattern;
+package StatePattern.StartStop;
 
 /**
  *
  * @author Dell
  */
-public interface StoreInterface {
-    
-    public boolean hasnext();
-    public Object next();
-    
+public interface State {
+    public void doaction(Context context);
 }
